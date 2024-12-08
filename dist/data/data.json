@@ -1,0 +1,36 @@
+{
+    "PRODUCTS": [
+        { 
+            "productBanner": "",
+            "productBannerColor": "",
+            "productImage": "images/sandwich.jpg",
+            "productName": "Product 1",
+            "productPrice": "100.00",
+            "productDescription": "Lorem ipsum dolor si amet consectetur adipisicing elit. Voluptatem ipsam eligendi illo doloribus dolorum, quo quaerat quas distinctio deserunt expedita cumque nulla quam nisi in numquam quae? Quas, voluptatibus fugit."
+        },
+        { 
+            "productBanner": "This is my banner",
+            "productBannerColor": "yellow",
+            "productImage": "images/sandwich2.jpg",
+            "productName": "Product 2",
+            "productPrice": "50.00",
+            "productDescription": "Lorem ipsum dolor si amet consectetur adipisicing elit. Voluptatem ipsam eligendi illo doloribus dolorum, quo quaerat quas distinctio deserunt expedita cumque nulla quam nisi in numquam quae? Quas, voluptatibus fugit."
+        },
+        { 
+            "productBanner": "",
+            "productBannerColor": "",
+            "productImage": "images/curling.jpg",
+            "productName": "Product 3",
+            "productPrice": "200.00",
+            "productDescription": "Lorem ipsum dolor si amet consectetur adipisicing elit. Voluptatem ipsam eligendi illo doloribus dolorum, quo quaerat quas distinctio deserunt expedita cumque nulla quam nisi in numquam quae? Quas, voluptatibus fugit."
+        },
+        { 
+            "productBanner": "",
+            "productBannerColor": "",
+            "productImage": "images/sandwich.jpg",
+            "productName": "Product 4",
+            "productPrice": "10.00",
+            "productDescription": "Lorem ipsum dolor si amet consectetur adipisicing elit. Voluptatem ipsam eligendi illo doloribus dolorum, quo quaerat quas distinctio deserunt expedita cumque nulla quam nisi in numquam quae? Quas, voluptatibus fugit."
+        }
+    ]
+}

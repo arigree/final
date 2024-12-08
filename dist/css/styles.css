@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: MarkOT;
+  src: url("../fonts/MarkOT.ttf");
+}
+.navContainer {
+  font-family: "MarkOT";
+}
+.navContainer .banner {
+  text-align: center;
+  padding: 10px;
+  width: 100vw;
+  background-color: #ffc92f;
+  height: 4vh;
+  position: relative;
+}
+.navContainer .banner h4 {
+  font-family: "MarkOT";
+  font-size: 1.6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navContainer .banner h4 p {
+  margin: 0vw 0.4vw;
+}
+.navContainer .banner h4 p a {
+  color: black;
+}
+.navContainer .banner h4 .close {
+  position: absolute;
+  right: 20px;
+  font-weight: bolder;
+}
+.navContainer .titleNav {
+  background-color: #ece9e4;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.navContainer .titleNav .logo {
+  cursor: pointer;
+  width: 150px;
+}
+.navContainer .titleNav .logo img {
+  width: 100%;
+}
+.navContainer .titleNav .search {
+  width: 700px;
+  height: 40px;
+  border: 0.5px solid lightgray;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: white;
+}
+.navContainer .titleNav .links {
+  width: 18vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: #473036;
+}
+.navContainer .titleNav .links .account i,
+.navContainer .titleNav .links .cart i,
+.navContainer .titleNav .links .support i {
+  /* height: 80%; */
+  font-size: 25px;
+  cursor: pointer;
+  color: #473036;
+}
+.navContainer .titleNav .links .account,
+.navContainer .titleNav .links .cart,
+.navContainer .titleNav .links .support {
+  /* height: 80%; */
+  font-size: 10px;
+  cursor: pointer;
+  color: #473036;
+}
+.navContainer .titleNav .links .cart {
+  position: relative;
+}
+.navContainer .titleNav .links .item-text {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  font-size: 15px;
+}
+.navContainer nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: #ece9e4;
+  display: flex;
+  padding: 0px 2%;
+}
+.navContainer nav .navItems {
+  height: 100%;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navContainer nav .navItems a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-size: 2vh;
+}
+.navContainer nav .navItems a span {
+  color: red;
+}
+.navContainer .discounts {
+  width: 100vw;
+  height: 12vh;
+  background-color: #473036;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navContainer .discounts .discount {
+  height: 60%;
+  width: 25%;
+  color: white;
+  text-align: center;
+  font-size: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid white;
+}
+.navContainer .discounts .discount p {
+  margin: 0;
+}
+.navContainer .discounts .discount p a {
+  color: white;
+}
