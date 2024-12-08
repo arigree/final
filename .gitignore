@@ -13,3 +13,8 @@ node_modules
 # project
 /css/styles.css.map
 .prepros
+
+firebaseConfig.js
+webpack.config.js
+package.json
+package-lock.json
