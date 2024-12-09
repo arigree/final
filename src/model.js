@@ -6,25 +6,27 @@ var cart = [];
 function changeRoute() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
-  //   console.log(hashTag + ' ' + pageID);
 
-  if (pageID != "") {
-    
-    $.get(`pages/${pageID}.html`, function (data) {
-      console.log("data " + data);
-      $("#app").html(data);
-      if (pageID == "cart"){
-       loadCartItems();
-      }
-    });
-  } else {
-    if (products.length <= 0) {
-      loadProducts();
-    } else{
+  if (pageID) {
+    if (pageID === "home") {
+      if (products.length === 0) {
+        loadProducts();
+      } else {
         loadHomePage();
+      }
+    } else {
+      $.get(`pages/${pageID}.html`, function (data) {
+        $("#app").html(data);
+        if (pageID === "cart") {
+          loadCartItems();
+        }
+      });
     }
+  } else {
+    window.location.hash = "home";
   }
-};
+}
+
 
 function loadCartItems(){
     if(cart.length > 0){
@@ -36,6 +38,7 @@ function loadCartItems(){
             <div class="image-holder">
       <img src="${product.productImage}" />
     </div>
+    <div class="productName">${product.productName}</div>
             <div class="description">
             ${product.productDescription}
             </div>
@@ -56,9 +59,10 @@ function loadCartItems(){
 };
 
 function loadHomePage() {
-  $("#app").html("");
+  $("#app").html("<header><img src='images/header.webp'/><div class='buttons'></div></header><div class='products'></div>");
   $.each(products, (index, product) => {
     let productHTML = `
+    
     <div class="product">
     ${
         product.productBanner ? `<div class="pbanner" style="background-color: ${product.productBannerColor}">${product.productBanner}</div>` 
@@ -67,14 +71,27 @@ function loadHomePage() {
         <div class="image-holder">
           <img src="${product.productImage}" />
         </div>
-        <div class="description">
-          ${product.productDescription}
+            <div class="productName">${product.productName}</div>
+      <div class="priceHolder">
+      <div class="price">
+          ${product.productPrice}
+        </div>
+        <p>with Keurig® Starter Kit</p>
+      </div>
+        
+        <div class="oldPrice">${product.oldPrice}</div>
+        <div class="rating">
+        <div class="stars">
+        <img src="${product.ratingImg}"/>
+        </div>
+        <div class="ratingTxt">${product.rating}</div>
         </div>
         <div class="buy">
           <div class="buy-now" id="${index}">BUY NOW</div>
         </div>
-      </div>`;
-      $("#app").append(productHTML);
+      </div>
+      `;
+      $(".products").append(productHTML);
   });
 
   addBuyNowListener();

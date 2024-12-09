@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: MarkOT;
   src: url("../fonts/MarkOT.ttf");
 }
+#app {
+  padding: 50px;
+}
+
 .navContainer {
   font-family: "MarkOT";
 }
@@ -151,4 +155,83 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .navContainer .discounts .discount p a {
   color: white;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img {
+  max-width: 1202px;
+}
+
+.products {
+  font-family: "MarkOT";
+  margin: 20px auto;
+  max-width: 1202px;
+  /* background-color: cadetblue; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.products .product {
+  width: 277px;
+  min-height: 450px;
+  /* background-color: burlywood; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+  -webkit-box-shadow: 16px 17px 34px -11px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 16px 17px 34px -11px rgba(0, 0, 0, 0.43);
+  box-shadow: 16px 17px 34px -11px rgba(0, 0, 0, 0.43);
+}
+.products .product .pbanner {
+  height: 20px;
+  width: 59%;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eae7e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.products .product .image-holder {
+  width: 90%;
+  padding: 20% 0%;
+}
+.products .product .image-holder img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.products .product .priceHolder {
+  display: flex;
+}
+.products .product .oldPrice {
+  text-decoration: line-through;
+}
+.products .product .rating {
+  height: 15px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+.products .product .rating .stars img {
+  height: 15px;
+}
+.products .product .buy .buy-now {
+  cursor: pointer;
+  /* background-color: palevioletred; */
+  /* color: white; */
+  padding: 10px 60px;
+  /* border-radius: 10px; */
+  border: 2px solid #fbca3d;
 }

@@ -2,7 +2,7 @@
     "PRODUCTS": [
         { 
             "productBanner": "2 FREE BOXES - BREW2FREE",
-            "productBannerColor": "yellow",
+            "productBannerColor": "#FFC92F",
             "productImage": "images/coffee1.webp",
             "productName": "K-Brew + Chill™ Coffee Maker",
             "productPrice": "99.99",
@@ -12,7 +12,7 @@
         },
         { 
             "productBanner": "2 FREE BOXES - BREW2FREE",
-            "productBannerColor": "yellow",
+            "productBannerColor": "#FFC92F",
             "productImage": "images/coffee2.webp",
             "productName": "K-Duo® Hot & Iced Single Serve & Carafe Coffee Maker (Gen 2)",
             "productPrice": "99.99",
@@ -22,7 +22,7 @@
         },
         { 
             "productBanner": "47% OFF - NO CODE REQUIRED",
-            "productBannerColor": "red",
+            "productBannerColor": "#C60000",
             "productImage": "images/coffee3.webp",
             "productName": "Keurig® K-Classic® Coffee Maker",
             "productPrice": "74.99",
@@ -32,7 +32,7 @@
         },
         { 
             "productBanner": "53% OFF - NO CODE REQUIRED",
-            "productBannerColor": "red",
+            "productBannerColor": "#C60000",
             "productImage": "images/coffee4.webp",
             "productName": "Keurig® K-Select® Coffee Maker",
             "productPrice": "74.99",
@@ -42,7 +42,7 @@
         },
         { 
             "productBanner": "42% OFF - NO CODE REQUIRED",
-            "productBannerColor": "red",
+            "productBannerColor": "#C60000",
             "productImage": "images/coffee5.webp",
             "productName": "Keurig® K-Elite® Single Serve Coffee Maker",
             "productPrice": "94.99",
@@ -52,7 +52,7 @@
         },
         { 
             "productBanner": "2 FREE BOXES - BREW2FREE",
-            "productBannerColor": "yellow",
+            "productBannerColor": "#FFC92F",
             "productImage": "images/coffee6.webp",
             "productName": "K-Supreme® SMART Single Serve Coffee Maker",
             "productPrice": "49.99",
@@ -62,7 +62,7 @@
         },
         { 
             "productBanner": "2 FREE BOXES - BREW2FREE",
-            "productBannerColor": "yellow",
+            "productBannerColor": "#FFC92F",
             "productImage": "images/coffee7.webp",
             "productName": "K-Supreme Plus® SMART Single Serve Coffee Maker",
             "productPrice": "99.99",
@@ -72,7 +72,7 @@
         },
         { 
             "productBanner": "47% OFF - NO CODE REQUIRED",
-            "productBannerColor": "red",
+            "productBannerColor": "#C60000",
             "productImage": "images/coffee8.webp",
             "productName": "K-Duo® Single Serve & Carafe Coffee Maker",
             "productPrice": "94.99",
@@ -82,7 +82,7 @@
         },
         { 
             "productBanner": "2 FREE BOXES - BREW2FREE",
-            "productBannerColor": "yellow",
+            "productBannerColor": "#FFC92F",
             "productImage": "images/coffee9.webp",
             "productName": "K-Cafe® SMART Single Serve Coffee Maker",
             "productPrice": "99.99",
@@ -92,7 +92,7 @@
         },
         { 
             "productBanner": "2 FREE BOXES - BREW2FREE",
-            "productBannerColor": "yellow",
+            "productBannerColor": "#FFC92F",
             "productImage": "images/coffee10.webp",
             "productName": "K-Cafe® Special Edition Single Serve Coffee Latte &...",
             "productPrice": "49.99",

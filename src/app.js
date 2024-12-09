@@ -4,7 +4,7 @@ import { initURLListener } from "./model";
 function initAccountListener() {
     // console.log("hello");
     $(".logo").on("click", function () {
-        window.location.hash="";
+        window.location.hash="home";
         console.log("logo clicked");
       });
   $(".account").on("click", function () {
