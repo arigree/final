@@ -1,0 +1,36 @@
+footer{
+    max-width: 1202px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    font-family: "MarkOT";
+
+    .footHeader{
+        color: white;
+        background-color: #3B2B2F;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .locate{
+            width: 40%;
+            display: flex;
+            justify-content: space-evenly;
+        align-items: center;
+           #circle{
+            font-size: 4px;
+        } 
+        }
+        .socials{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            p{
+                margin-bottom: 0px;
+            }
+            
+        }
+        
+    }
+}

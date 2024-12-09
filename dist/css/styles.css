@@ -71,7 +71,13 @@ h1, h2, h3, h4, h5, h6, p {
   border: 0.5px solid lightgray;
   border-radius: 20px;
   padding: 0 10px;
+  display: flex;
+  align-items: center;
   background-color: white;
+}
+.navContainer .titleNav .search i {
+  padding: 10px;
+  font-size: 20px;
 }
 .navContainer .titleNav .links {
   width: 18vw;
@@ -82,7 +88,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   color: #473036;
 }
-.navContainer .titleNav .links .account i,
+.navContainer .titleNav .links .accountIcon i,
 .navContainer .titleNav .links .cart i,
 .navContainer .titleNav .links .support i {
   /* height: 80%; */
@@ -90,7 +96,7 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
   color: #473036;
 }
-.navContainer .titleNav .links .account,
+.navContainer .titleNav .links .accountIcon,
 .navContainer .titleNav .links .cart,
 .navContainer .titleNav .links .support {
   /* height: 80%; */
@@ -101,7 +107,7 @@ h1, h2, h3, h4, h5, h6, p {
 .navContainer .titleNav .links .cart {
   position: relative;
 }
-.navContainer .titleNav .links .item-text {
+.navContainer .titleNav .links .cart .item-text {
   position: absolute;
   top: -15px;
   right: 0;
@@ -162,12 +168,202 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  font-family: "MarkOT";
 }
 header img {
-  max-width: 1202px;
+  max-width: 100%;
+  height: auto;
+}
+header .sortBtns {
+  padding: 25px 0px;
+  display: flex;
+  width: 1202px;
+  justify-content: space-between;
+}
+header .sortBtns .buttons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+header .sortBtns .buttons .button {
+  cursor: pointer;
+  border: 2px solid #999999;
+  height: fit-content;
+  padding: 10px 15px;
+}
+header .sortBtns .buttons .button i {
+  color: #999999;
+}
+header .sortBtns .sort {
+  cursor: pointer;
+}
+header .sortBtns .sort span {
+  font-size: 10px;
 }
 
 .products {
+  font-family: "MarkOT";
+  margin: 20px auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.products .product {
+  text-align: left;
+  width: 100%;
+  max-width: 277px;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+  box-shadow: 16px 17px 34px -11px rgba(0, 0, 0, 0.43);
+}
+.products .product .pbanner {
+  height: 20px;
+  min-width: 59%;
+  padding: 0px 5px;
+  font-size: 1.1vh;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #eae7e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.products .product .image-holder {
+  width: 90%;
+  padding: 20% 0%;
+}
+.products .product .image-holder img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.products .product .priceHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.products .product .priceHolder .price {
+  color: #d51610;
+  font-weight: bold;
+  display: flex;
+}
+.products .product .priceHolder .price span {
+  font-size: 10px;
+}
+.products .product .priceHolder p {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.products .product .oldPrice {
+  width: 100%;
+  text-decoration: line-through;
+  font-size: 10px;
+}
+.products .product .rating {
+  height: 15px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.products .product .rating .stars img {
+  height: 10px;
+}
+.products .product .buy .buy-now {
+  cursor: pointer;
+  padding: 10px 60px;
+  border: 2px solid #fbca3d;
+  font-weight: bold;
+}
+
+@media (max-width: 1202px) {
+  .sortBtns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sortBtns .buttons {
+    width: 100%;
+    justify-content: center;
+  }
+  .sortBtns .sort {
+    margin-top: 10px;
+  }
+  .products {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .product {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .sortBtns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sortBtns .buttons {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .sortBtns .button {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .sortBtns .sort {
+    width: 100%;
+    text-align: center;
+  }
+  .products {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .product {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    min-height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+    padding: 10px;
+    min-height: auto;
+  }
+  .productName {
+    font-size: 14px;
+  }
+  .priceHolder {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rating {
+    font-size: 10px;
+  }
+  .buy-now {
+    padding: 10px 30px;
+  }
+}
+.cart-items {
   font-family: "MarkOT";
   margin: 20px auto;
   max-width: 1202px;
@@ -176,7 +372,8 @@ header img {
   flex-wrap: wrap;
   gap: 30px;
 }
-.products .product {
+.cart-items .product {
+  text-align: left;
   width: 277px;
   min-height: 450px;
   /* background-color: burlywood; */
@@ -190,9 +387,10 @@ header img {
   -moz-box-shadow: 16px 17px 34px -11px rgba(0, 0, 0, 0.43);
   box-shadow: 16px 17px 34px -11px rgba(0, 0, 0, 0.43);
 }
-.products .product .pbanner {
+.cart-items .product .pbanner {
   height: 20px;
-  width: 59%;
+  min-width: 59%;
+  padding: 0px 5px;
   font-size: 1.1vh;
   font-weight: bold;
   position: absolute;
@@ -202,36 +400,121 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
-.products .product .image-holder {
+.cart-items .product .image-holder {
   width: 90%;
   padding: 20% 0%;
 }
-.products .product .image-holder img {
+.cart-items .product .image-holder img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.products .product .priceHolder {
+.cart-items .product .priceHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-items .product .priceHolder .price {
+  color: #D51610;
+  font-weight: bold;
   display: flex;
 }
-.products .product .oldPrice {
-  text-decoration: line-through;
+.cart-items .product .priceHolder .price span {
+  font-size: 10px;
 }
-.products .product .rating {
+.cart-items .product .priceHolder p {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.cart-items .product .oldPrice {
+  width: 100%;
+  text-decoration: line-through;
+  font-size: 10px;
+}
+.cart-items .product .rating {
   height: 15px;
   width: 100%;
   padding: 10px;
   display: flex;
+  align-items: center;
+  font-size: 12px;
 }
-.products .product .rating .stars img {
-  height: 15px;
+.cart-items .product .rating .stars img {
+  height: 10px;
 }
-.products .product .buy .buy-now {
+.cart-items .product .remove {
   cursor: pointer;
   /* background-color: palevioletred; */
   /* color: white; */
   padding: 10px 60px;
   /* border-radius: 10px; */
   border: 2px solid #fbca3d;
+  font-weight: bold;
+}
+
+.account {
+  font-family: "MarkOT";
+  margin: 0 auto;
+  display: flex;
+  width: 1202px;
+}
+.account .container {
+  margin: 0 auto;
+}
+.account .container .form-container {
+  max-width: 1202px;
+}
+.account .container .form-container #so,
+.account .container .form-container #submit,
+.account .container .form-container #siSubmit {
+  cursor: pointer;
+  padding: 2px 10px;
+  border: 2px solid #fbca3d;
+  font-weight: bold;
+}
+.account .container .form-container .signup-form, .account .container .form-container .login-form {
+  padding: 50px;
+}
+.account .container .form-container .soContain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  max-width: 1202px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  font-family: "MarkOT";
+}
+footer .footHeader {
+  color: white;
+  background-color: #3B2B2F;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footHeader .locate {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .footHeader .locate #circle {
+  font-size: 4px;
+}
+footer .footHeader .socials {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .footHeader .socials p {
+  margin-bottom: 0px;
 }

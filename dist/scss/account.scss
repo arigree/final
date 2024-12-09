@@ -1,0 +1,30 @@
+.account {
+  font-family: "MarkOT";
+  margin: 0 auto;
+  display: flex;
+  width: 1202px;
+  .container {
+    margin: 0 auto;
+    .form-container {
+      max-width: 1202px;
+      #so,
+      #submit,
+      #siSubmit {
+        cursor: pointer;
+        padding: 2px 10px;
+        border: 2px solid #fbca3d;
+        font-weight: bold;
+      }
+      .signup-form, .login-form{
+        padding: 50px;
+      }
+      .soContain{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+    }
+  }
+}

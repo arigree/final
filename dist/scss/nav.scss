@@ -48,7 +48,13 @@
       border: 0.5px solid lightgray;
       border-radius: 20px;
       padding: 0 10px;
+      display: flex;
+      align-items: center;
       background-color: white;
+      i{
+        padding: 10px;
+        font-size: 20px;
+      }
     }
     .links {
       width: 18vw;
@@ -59,7 +65,7 @@
       justify-content: space-between;
       text-align: center;
       color: #473036;
-      .account i,
+      .accountIcon i,
       .cart i,
       .support i {
         /* height: 80%; */
@@ -67,7 +73,7 @@
         cursor: pointer;
         color: #473036;
       }
-      .account,
+      .accountIcon,
       .cart,
       .support {
         /* height: 80%; */
@@ -77,13 +83,14 @@
       }
       .cart {
         position: relative;
-      }
-      .item-text {
+        .item-text {
         position: absolute;
         top: -15px;
         right: 0;
         font-size: 15px;
       }
+      }
+      
     }
   }
   nav {
