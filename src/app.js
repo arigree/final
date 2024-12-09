@@ -37,7 +37,7 @@ function initAccountListener() {
       window.location.hash="home";
       console.log("logo clicked");
     });
-$(".account").on("click", function () {
+$(".accountIcon").on("click", function () {
   window.location.hash="account";
   console.log("account clicked");
 });
